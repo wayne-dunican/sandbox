@@ -1,0 +1,8 @@
+curl -X PUT --data-binary @access_policy.rego http://localhost:8181/v1/policies/main
+ to give the OPA service the defined rule/policy
+
+curl http://localhost:8181/v1/policies
+ to confirm that the policy is stored in the list of policies
+
+curl -X POST --data-binary @input.json 'http://localhost:8181/v1/data/example/allow_access' -H 'Content-Type: application/json'
+ to have OPA scan the contents of the `input.json` file 

@@ -1,0 +1,8 @@
+{
+    "input": {
+        "policyType": "onap.test.opa",
+        "policyVersion": 1,
+        "taskLogic": "some logic here"
+    }
+}
+ 

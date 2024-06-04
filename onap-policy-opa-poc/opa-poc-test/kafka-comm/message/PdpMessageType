@@ -1,0 +1,11 @@
+package main
+
+type PdpMessageType int
+
+const (
+	PDP_STATUS PdpMessageType = iota
+	PDP_UPDATE
+	PDP_STATE_CHANGE
+	PDP_HEALTH_CHECK
+	PDP_TOPIC_CHECK
+)
